@@ -1,0 +1,86 @@
+{
+  "name": "AlvinMusicRobot",
+  "logo": "https://telegra.ph/file/d19b68d228e2dc46eb8f5.jpg",
+  "description": "Open-Source bot to play songs in your Telegram's Group Voice Chat. Powered by PyTgCalls.",
+  "keywords": ["music", "voicechat", "telegram"],
+  "repository": "https://github.com/fahrial2310/AlvinMusicRobot",
+  "stack": "heroku-20",
+  "buildpacks": [
+   {
+     "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+   },
+   {
+     "url": "heroku/python"
+   }   
+  ],        
+  "env": {
+    "SESSION_NAME": {
+      "description": "Pyrogram session string",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "token bot dari @BotFather",
+      "required": true
+    },
+    "BOT_USERNAME": {
+      "description": "username kamu tanpa @",
+      "required": true
+    },
+    "BOT_NAME": {
+      "description": "nama bot music player mu.",
+      "required": false,
+      "value": "Alvin Music Bot"
+    },
+    "SUPPORT_GROUP": {
+      "description": "username group support mu tanpa @ [tinggalkan jika tidak ada]",
+      "required": false,
+      "value": "alvin_image_editor_group"
+    },
+    "PROJECT_NAME": {
+      "description": "nama project musicplayer mu.",
+      "required": false,
+      "value": "Alvin Junior Bot"
+    },
+    "ASSISTANT_NAME": {
+      "description": "assistant bot musicplayer mu tanpa @.",
+      "required": true
+    },
+    "ARQ_API_KEY": {
+      "description": "dapatkan di @ARQRobot.",
+      "required": false,
+      "value": ""
+    },    
+    "BG_IMAGE": {
+      "description": "BG image untuk bot (gunakan transparent satu) [IGNORE].",
+      "required": false,
+      "value": "https://telegra.ph/file/b623ab3cd8caef9efff2b.jpg"
+    },     
+    "UPDATES_CHANNEL": {
+      "description": "Updates Channel tanpa @ [tinggalkan jika tidak ada].",
+      "required": false,
+      "value": "alvin_image_editor"
+    },    
+    "API_ID": {
+      "description": "App ID dari my.telegram.org/apps",
+      "required": true
+    },
+    "PMPERMIT": {
+      "description": "ubah jika ingin dinonaktifkan",
+      "required": false,
+      "value": "ENABLE"
+    },    
+    "API_HASH": {
+      "description": "App hash dari my.telegram.org/apps",
+      "required": true
+    },
+    "SUDO_USERS": {
+      "description": "Daftar ID pengguna dihitung sebagai admin di mana-mana (dipisahkan dengan spasi).",
+      "required": true
+    },
+    "DURATION_LIMIT": {
+      "description": "durasi max unduh audio (menit).",
+      "required": true,
+      "value": "10"
+    }
+  }
+}
