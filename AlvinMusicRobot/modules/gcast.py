@@ -1,4 +1,4 @@
-# Daisyxmusic (Telegram bot project )
+# AlvinMusicRobot (Telegram bot project )
 # Copyright (C) 2021  Inukaasith
 
 # This program is free software: you can redistribute it and/or modify
@@ -24,8 +24,8 @@ from pyrogram.types import Chat
 from pyrogram.types import Message
 from pyrogram.errors import UserAlreadyParticipant
 
-from DaisyXMusic.services.callsmusic.callsmusic import client as USER
-from DaisyXMusic.config import SUDO_USERS
+from AlvinMusicRobot.services.callsmusic.callsmusic import client as USER
+from AlvinMusicRobot.config import SUDO_USERS
 
 @Client.on_message(filters.command(["broadcast"]))
 async def broadcast(_, message: Message):
