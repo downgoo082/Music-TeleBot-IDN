@@ -27,6 +27,7 @@ from AlvinMusicRobot.config import PROJECT_NAME
 from AlvinMusicRobot.config import SUPPORT_GROUP
 from AlvinMusicRobot.config import UPDATES_CHANNEL
 from AlvinMusicRobot.config import BOT_USERNAME
+from AlvinMusicRobot.config import SOURCE_CODE
 logging.basicConfig(level=logging.INFO)
 
 @Client.on_message(filters.private & filters.incoming & filters.command(['start']))
@@ -104,7 +105,7 @@ def map(pos):
             [InlineKeyboardButton("➕ Tambahkan Saya Ke Group ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
             [InlineKeyboardButton(text = '🔔 Updates', url=f"https://t.me/{UPDATES_CHANNEL}"),
              InlineKeyboardButton(text = '📣 Support', url=f"https://t.me/{SUPPORT_GROUP}")],
-            [InlineKeyboardButton(text = '⚜️Creator🔰', url=f"https://{CREATOR_NAME}")],
+            [InlineKeyboardButton(text = '🔍 Source Code 🔎', url=f"https://{SURCE_CODE}")],
             [InlineKeyboardButton(text = '◀️Back', callback_data = f"help+{pos-1}")]
         ]
     else:
