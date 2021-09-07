@@ -40,7 +40,7 @@ $ cd AlvinMusicRobot
 # Install All Requirements 
 $ pip3 install -U -r requirements.txt
 # Fork This Repo and fill config.py vars with your own values.Then Start The Bot
-$ python3 -m AlvinMuicRobot
+$ python3 -m AlvinMusicRobot
 ```
 
 ### Commands for Group 🛠
