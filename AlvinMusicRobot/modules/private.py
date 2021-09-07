@@ -1,4 +1,4 @@
-# Daisyxmusic (Telegram bot project )
+# AlvinMusicRobot (Telegram bot project )
 # Copyright (C) 2021  Inukaasith
 
 # This program is free software: you can redistribute it and/or modify
@@ -15,18 +15,18 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 import logging
-from DaisyXMusic.modules.msg import Messages as tr
+from AlvinMusicRobot.modules.msg import Messages as tr
 from pyrogram import Client
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup
 from pyrogram.types import InlineKeyboardButton
 from pyrogram.types import Message
-from DaisyXMusic.config import SOURCE_CODE
-from DaisyXMusic.config import ASSISTANT_NAME
-from DaisyXMusic.config import PROJECT_NAME
-from DaisyXMusic.config import SUPPORT_GROUP
-from DaisyXMusic.config import UPDATES_CHANNEL
-from DaisyXMusic.config import BOT_USERNAME
+from AlvinMusicRobot.config import SOURCE_CODE
+from AlvinMusicRobot.config import ASSISTANT_NAME
+from AlvinMusicRobot.config import PROJECT_NAME
+from AlvinMusicRobot.config import SUPPORT_GROUP
+from AlvinMusicRobot.config import UPDATES_CHANNEL
+from AlvinMusicRobot.config import BOT_USERNAME
 logging.basicConfig(level=logging.INFO)
 
 @Client.on_message(filters.private & filters.incoming & filters.command(['start']))
@@ -46,7 +46,7 @@ def _start(client, message):
                         "📣 Support", url=f"https://t.me/{SUPPORT_GROUP}")
                 ],[
                     InlineKeyboardButton(
-                        "🔍 Source Code 🔎", url=f"https://{SOURCE_CODE}")
+                        "⚜️Creator🔰", url=f"https://t.me/alvin_junior")
                 ]
             ]
         ),
