@@ -1,7 +1,7 @@
-# Copyright (C) 2021 TeamDaisyX
+# Copyright (C) 2021 alvin_junior
 
 
-# This file is part of Daisy (Telegram Bot)
+# This file is part of AlvinMusicRobot (Telegram Bot)
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
