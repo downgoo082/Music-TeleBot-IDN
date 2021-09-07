@@ -21,7 +21,7 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup
 from pyrogram.types import InlineKeyboardButton
 from pyrogram.types import Message
-from AlvinMusicRobot.config import SOURCE_CODE
+from AlvinMusicRobot.config import CREATOR_NAME
 from AlvinMusicRobot.config import ASSISTANT_NAME
 from AlvinMusicRobot.config import PROJECT_NAME
 from AlvinMusicRobot.config import SUPPORT_GROUP
@@ -46,7 +46,7 @@ def _start(client, message):
                         "📣 Support", url=f"https://t.me/{SUPPORT_GROUP}")
                 ],[
                     InlineKeyboardButton(
-                        "⚜️Creator🔰", url=f"https://t.me/alvin_junior")
+                        "⚜️Creator🔰", url=f"https://t.me/{CREATOR_NAME}")
                 ]
             ]
         ),
@@ -104,7 +104,7 @@ def map(pos):
             [InlineKeyboardButton("➕ Tambahkan Saya Ke Group ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
             [InlineKeyboardButton(text = '🔔 Updates', url=f"https://t.me/{UPDATES_CHANNEL}"),
              InlineKeyboardButton(text = '📣 Support', url=f"https://t.me/{SUPPORT_GROUP}")],
-            [InlineKeyboardButton(text = '🔍 Source Code 🔎', url=f"https://{SOURCE_CODE}")],
+            [InlineKeyboardButton(text = '⚜️Creator🔰', url=f"https://{CREATOR_NAME}")],
             [InlineKeyboardButton(text = '◀️Back', callback_data = f"help+{pos-1}")]
         ]
     else:
