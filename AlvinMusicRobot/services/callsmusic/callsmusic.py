@@ -18,8 +18,8 @@ from typing import Dict
 
 from pytgcalls import GroupCallFactory
 
-from DaisyXMusic.services.callsmusic import client
-from DaisyXMusic.services.queues import queues
+from AlvinMusicRobot.services.callsmusic import client
+from AlvinMusicRobot.services.queues import queues
 
 
 instances: Dict[int, GroupCallFactory] = {}
