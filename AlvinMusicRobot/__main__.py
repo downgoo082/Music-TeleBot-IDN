@@ -1,4 +1,4 @@
-# DaisyXMusic (Telegram bot project)
+# AlvinMusicRobot (Telegram bot project)
 # Copyright (C) 2021  Inuka Asith & Rojserbest
 
 # This program is free software: you can redistribute it and/or modify
@@ -18,11 +18,11 @@
 import requests
 from pyrogram import Client as Bot
 
-from DaisyXMusic.config import API_HASH
-from DaisyXMusic.config import API_ID
-from DaisyXMusic.config import BG_IMAGE
-from DaisyXMusic.config import BOT_TOKEN
-from DaisyXMusic.services.callsmusic import run
+from AlvinMusicRobot.config import API_HASH
+from AlvinMusicRobot.config import API_ID
+from AlvinMusicRobot.config import BG_IMAGE
+from AlvinMusicRobot.config import BOT_TOKEN
+from AlvinMusicRobot.services.callsmusic import run
 
 response = requests.get(BG_IMAGE)
 file = open("./etc/foreground.png", "wb")
@@ -34,7 +34,7 @@ bot = Bot(
     API_ID,
     API_HASH,
     bot_token=BOT_TOKEN,
-    plugins=dict(root="DaisyXMusic.modules"),
+    plugins=dict(root="AlvinMusicRobot.modules"),
 )
 
 bot.start()
