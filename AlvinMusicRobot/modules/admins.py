@@ -27,7 +27,7 @@ from AlvinMusicRobot.helpers.decorators import authorized_users_only
 from AlvinMusicRobot.helpers.decorators import errors
 from AlvinMusicRobot.helpers.filters import command
 from AlvinMusicRobot.helpers.filters import other_filters
-from AlvinMusicRobotc.services.callsmusic import callsmusic
+from AlvinMusicRobot.services.callsmusic import callsmusic
 from AlvinMusicRobot.services.queues import queues
 
 
