@@ -1,4 +1,4 @@
-# Daisyxmusic (Telegram bot project)
+# AlvinMusicRobot (Telegram bot project)
 # Copyright (C) 2021  Inukaasith
 # Copyright (C) 2021  TheHamkerCat (Python_ARQ)
 # This program is free software: you can redistribute it and/or modify
@@ -34,31 +34,31 @@ from pyrogram.types import Voice
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from Python_ARQ import ARQ
 from youtube_search import YoutubeSearch
-from DaisyXMusic.modules.play import generate_cover
-from DaisyXMusic.modules.play import arq
-from DaisyXMusic.modules.play import cb_admin_check
-from DaisyXMusic.modules.play import transcode
-from DaisyXMusic.modules.play import convert_seconds
-from DaisyXMusic.modules.play import time_to_seconds
-from DaisyXMusic.modules.play import changeImageSize
-from DaisyXMusic.config import BOT_NAME as bn
-from DaisyXMusic.config import DURATION_LIMIT
-from DaisyXMusic.config import UPDATES_CHANNEL as updateschannel
-from DaisyXMusic.config import que
-from DaisyXMusic.function.admins import admins as a
-from DaisyXMusic.helpers.errors import DurationLimitError
-from DaisyXMusic.helpers.decorators import errors
-from DaisyXMusic.helpers.admins import get_administrators
-from DaisyXMusic.helpers.channelmusic import get_chat_id
-from DaisyXMusic.helpers.decorators import authorized_users_only
-from DaisyXMusic.helpers.filters import command
-from DaisyXMusic.helpers.filters import other_filters
-from DaisyXMusic.helpers.gets import get_file_name
-from DaisyXMusic.services.callsmusic import callsmusic
-from DaisyXMusic.services.callsmusic import client as USER
-from DaisyXMusic.services.converter.converter import convert
-from DaisyXMusic.services.downloaders import youtube
-from DaisyXMusic.services.queues import queues
+from AlvinMusicRobot.modules.play import generate_cover
+from AlvinMusicRobot.modules.play import arq
+from AlvinMusicRobot.modules.play import cb_admin_check
+from AlvinMusicRobot.modules.play import transcode
+from AlvinMusicRobot.modules.play import convert_seconds
+from AlvinMusicRobot.modules.play import time_to_seconds
+from AlvinMusicRobot.modules.play import changeImageSize
+from AlvinMusicRobot.config import BOT_NAME as bn
+from AlvinMusicRobot.config import DURATION_LIMIT
+from AlvinMusicRobot.config import UPDATES_CHANNEL as updateschannel
+from AlvinMusicRobot.config import que
+from AlvinMusicRobot.function.admins import admins as a
+from AlvinMusicRobot.helpers.errors import DurationLimitError
+from AlvinMusicRobot.helpers.decorators import errors
+from AlvinMusicRobot.helpers.admins import get_administrators
+from AlvinMusicRobot.helpers.channelmusic import get_chat_id
+from AlvinMusicRobot.helpers.decorators import authorized_users_only
+from AlvinMusicRobot.helpers.filters import command
+from AlvinMusicRobot.helpers.filters import other_filters
+from AlvinMusicRobot.helpers.gets import get_file_name
+from AlvinMusicRobot.services.callsmusic import callsmusic
+from AlvinMusicRobot.services.callsmusic import client as USER
+from AlvinMusicRobot.services.converter.converter import convert
+from AlvinMusicRobot.services.downloaders import youtube
+from AlvinMusicRobot.services.queues import queues
 
 chat_id = None
 
