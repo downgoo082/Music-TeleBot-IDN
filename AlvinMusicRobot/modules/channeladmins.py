@@ -20,15 +20,15 @@ from pyrogram import Client
 from pyrogram import filters
 from pyrogram.types import Message
 
-from DaisyXMusic.config import que
-from DaisyXMusic.function.admins import set
-from DaisyXMusic.helpers.channelmusic import get_chat_id
-from DaisyXMusic.helpers.decorators import authorized_users_only
-from DaisyXMusic.helpers.decorators import errors
-from DaisyXMusic.helpers.filters import command 
-from DaisyXMusic.helpers.filters import other_filters
-from DaisyXMusic.services.callsmusic import callsmusic
-from DaisyXMusic.services.queues import queues
+from AlvinMusicRobot.config import que
+from AlvinMusicRobot.function.admins import set
+from AlvinMusicRobot.helpers.channelmusic import get_chat_id
+from AlvinMusicRobot.helpers.decorators import authorized_users_only
+from AlvinMusicRobot.helpers.decorators import errors
+from AlvinMusicRobot.helpers.filters import command 
+from AlvinMusicRobot.helpers.filters import other_filters
+from AlvinMusicRobot.services.callsmusic import callsmusic
+from AlvinMusicRobot.services.queues import queues
 
 
 @Client.on_message(filters.command(["channelpause","cpause"]) & filters.group & ~filters.edited)
