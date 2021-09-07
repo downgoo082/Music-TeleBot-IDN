@@ -1,4 +1,4 @@
-# Daisyxmusic (Telegram bot project )
+# AlvinMusicRobot (Telegram bot project )
 # Copyright (C) 2021  Inukaasith
 
 # This program is free software: you can redistribute it and/or modify
@@ -19,10 +19,10 @@ from pyrogram import Client
 from pyrogram import filters
 from pyrogram.errors import UserAlreadyParticipant
 import asyncio
-from DaisyXMusic.helpers.decorators import authorized_users_only
-from DaisyXMusic.helpers.decorators import errors
-from DaisyXMusic.services.callsmusic import client as USER
-from DaisyXMusic.config import SUDO_USERS
+from AlvinMusicRobot.helpers.decorators import authorized_users_only
+from AlvinMusicRobot.helpers.decorators import errors
+from AlvinMusicRobot.services.callsmusic import client as USER
+from AlvinMusicRobot.config import SUDO_USERS
 
 @Client.on_message(filters.command(["userbotjoin"]) & ~filters.private & ~filters.bot)
 @authorized_users_only
@@ -40,7 +40,7 @@ async def addchannel(client, message):
     try:
         user = await USER.get_me()
     except:
-        user.first_name = "DaisyMusic"
+        user.first_name = "AlvinMusicRobot"
 
     try:
         await USER.join_chat(invitelink)
