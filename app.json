@@ -1,18 +1,12 @@
 {
-  "name": "AlvinMusicRobot",
-  "logo": "https://telegra.ph/file/d19b68d228e2dc46eb8f5.jpg",
-  "description": "Open-Source bot to play songs in your Telegram's Group Voice Chat. Powered by PyTgCalls.",
-  "keywords": ["music", "voicechat", "telegram"],
-  "repository": "https://github.com/fahrial2310/Music-TeleBot-IDN",
-  "stack": "heroku-20",
-  "buildpacks": [
-   {
-     "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
-   },
-   {
-     "url": "heroku/python"
-   }   
-  ],        
+   "addons": [
+      {
+         "options": {
+            "version": "12"
+         },
+         "plan": "heroku-postgresql"
+      }
+   ],   
   "env": {
     "SESSION_NAME": {
       "description": "Pyrogram session string",
