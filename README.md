@@ -25,7 +25,7 @@
 
 ### 💜 Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/fahrial2310/Music-TeleBot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/fahrial2310/Music-TeleBot-IDN)
 
 Get pyrogram (p)  `SESSION` from here:
 
@@ -34,7 +34,7 @@ Get pyrogram (p)  `SESSION` from here:
 ### ⚔ Self-hosting (For Devs) 
 ```sh
 # Install Git First (apt-get install git)
-$ git clone https://github.com/fahrial2310/AlvinMuicRobot
+$ git clone https://github.com/fahrial2310/AlvinMusicRobot
 $ cd AlvinMusicRobot
 # Upgrade sources
 # Install All Requirements 
