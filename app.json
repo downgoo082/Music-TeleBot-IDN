@@ -23,26 +23,26 @@
       "required": true
     },
     "BOT_USERNAME": {
-      "description": "username kamu tanpa @",
+      "description": "username botmu tanpa @",
       "required": true
     },
     "BOT_NAME": {
-      "description": "nama bot music player mu.",
+      "description": "nama bot musik player.",
       "required": false,
       "value": "Alvin Music Bot"
     },
     "SUPPORT_GROUP": {
-      "description": "username group support mu tanpa @ [tinggalkan jika tidak ada]",
+      "description": "support group tanpa @ [tinggalkan jika tidak ada]",
       "required": false,
       "value": "alvin_image_editor_group"
     },
     "PROJECT_NAME": {
-      "description": "nama project musicplayer mu.",
+      "description": "nama projek musik player.",
       "required": false,
       "value": "Alvin Junior Bot"
     },
     "ASSISTANT_NAME": {
-      "description": "assistant bot musicplayer mu tanpa @.",
+      "description": "assistant botmu tanpa @.",
       "required": true
     },
     "ARQ_API_KEY": {
@@ -51,34 +51,34 @@
       "value": ""
     },    
     "BG_IMAGE": {
-      "description": "BG image untuk bot (gunakan transparent satu) [IGNORE].",
+      "description": "BG image bot (Use transparent one) [IGNORE].",
       "required": false,
       "value": "https://telegra.ph/file/b623ab3cd8caef9efff2b.jpg"
     },     
     "UPDATES_CHANNEL": {
-      "description": "Updates Channel tanpa @ [tinggalkan jika tidak ada].",
+      "description": "Updates Channel tanpa @ [Leave this if you don't have one].",
       "required": false,
-      "value": "alvin_image_editor"
+      "value": "Alvin_image_editor"
     },    
     "API_ID": {
-      "description": "App ID dari my.telegram.org/apps",
+      "description": "App ID dapatkan di my.telegram.org/apps",
       "required": true
     },
     "PMPERMIT": {
-      "description": "ubah jika ingin dinonaktifkan",
+      "description": "biarkan menjadi off",
       "required": false,
       "value": "ENABLE"
     },    
     "API_HASH": {
-      "description": "App hash dari my.telegram.org/apps",
+      "description": "App hash dapatkan di my.telegram.org/apps",
       "required": true
     },
     "SUDO_USERS": {
-      "description": "Daftar ID pengguna dihitung sebagai admin di mana-mana (dipisahkan dengan spasi).",
+      "description": "List of user IDs counted as admin everywhere (separated by space).",
       "required": true
     },
     "DURATION_LIMIT": {
-      "description": "durasi max unduh audio (menit).",
+      "description": "limit durasi audio yang dapat di unduh (menit).",
       "required": true,
       "value": "10"
     }
