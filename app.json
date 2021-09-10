@@ -12,7 +12,7 @@
    {
      "url": "heroku/python"
    }   
-  ] 
+  ],
   "env": {
     "SESSION_NAME": {
       "description": "Pyrogram session string",
