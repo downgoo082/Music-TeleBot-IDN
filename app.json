@@ -41,6 +41,11 @@
       "required": false,
       "value": "Alvin Junior Bot"
     },
+    "GROUP_HELPERS": {
+      "description":"group helpers untuk botmu
+      "required": false,
+      "value": "Alvin_image_editor_helpers
+    },
     "ASSISTANT_NAME": {
       "description": "assistant botmu tanpa @.",
       "required": true
