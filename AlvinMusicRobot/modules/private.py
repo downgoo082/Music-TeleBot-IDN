@@ -21,7 +21,7 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup
 from pyrogram.types import InlineKeyboardButton
 from pyrogram.types import Message
-from AlvinMusicRobot.config import CREATOR_NAME
+from AlvinMusicRobot.config import GROUP_HELPERS
 from AlvinMusicRobot.config import ASSISTANT_NAME
 from AlvinMusicRobot.config import PROJECT_NAME
 from AlvinMusicRobot.config import SUPPORT_GROUP
@@ -45,6 +45,11 @@ def _start(client, message):
                         "🔔 Updates", url=f"https://t.me/{UPDATES_CHANNEL}"), 
                     InlineKeyboardButton(
                         "📣 Support", url=f"https://t.me/{SUPPORT_GROUP}")
+                [ 
+                    InlineKeyboardButton(
+                        "⁉️Helpers⁉️", url=f"https://t.me/{GROUP_HELPERS}"),
+                    InlineKeyboardButton(
+                        "🔍Source Code🔎", url=f"https://{SOURCE_CODE}")
                 ],[
                     InlineKeyboardButton(
                         "⚜️Creator🔰", url=f"https://t.me/{CREATOR_NAME}")
